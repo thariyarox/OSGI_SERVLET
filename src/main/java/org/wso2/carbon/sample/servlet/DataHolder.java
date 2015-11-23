@@ -2,6 +2,9 @@ package org.wso2.carbon.sample.servlet;
 
 import org.osgi.service.http.HttpService;
 
+/**
+ * Singleton class to hold HTTP Service
+ */
 public class DataHolder {
 
     private static volatile DataHolder dataHolder = null;

@@ -28,8 +28,8 @@ public class OSGIServletDSComponent {
 
         // Register Sample Servlet
         Servlet sampleServlet = new ContextPathServletAdaptor(new SampleServlet(), SAMPLE_SERVLET_URL);
-        try {
 
+        try {
             DataHolder.getInstance().getHttpService().registerServlet(SAMPLE_SERVLET_URL, sampleServlet, null, null);
         } catch (Exception e) {
             String errMsg = "Error when registering Sample Servlet via the HttpService.";
